@@ -1,0 +1,1073 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1DA1F2; /* Customize for a hover effect */
+}
+
+body {
+    padding-top: 60px; /* Add padding to prevent content overlap with navbar */
+    
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    line-height: 1.6;
+    background-image: url(image.jpg);
+}
+
+
+#about {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about:hover {
+    background-color: #1DA1F2; /* Change background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #fff; /* Ensure text remains white */
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #ccc;
+    transition: color 0.3s ease-in-out;
+}
+
+#about:hover h2, #about:hover p {
+    color: #fff; /* Change text color to white on hover */
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 1s ease-in;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-in;
+}
+
+
+
+#about {
+    background-color: #2e2e2e; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1DA1F2; /* Accent color */
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #ccc; /* Light grey text */
+}
+
+
+.skills, .projects, .certifications, .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Add gap between cards */
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 20px); /* 3 cards per row with spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p, .card li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Existing styles above this line */
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    animation: fadeInRight 0.8s ease-in-out;
+}
+
+.card p, .card li {
+    margin: 5px 0;
+    animation: fadeInLeft 0.8s ease-in-out;
+}
+
+/* Animation for fading in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add active class to animate on scroll */
+.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Existing styles above this line */
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(50px); /* Initial position for animation */
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* Smooth transition */
+}
+
+section.active {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Other existing styles remain unchanged */
+
+.profile-photo {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the element without stretching */
+    margin-top: 20px; /* Adds space above the photo */
+    animation: fadeIn 1s ease-in; /* Optional fade-in animation */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Change 'Roboto' to the font you chose */
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+/* Keyframes for fade-in and fade-out effect */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    50% {
+        opacity: 1; /* Fully visible halfway */
+    }
+    100% {
+        opacity: 0; /* Back to invisible */
+    }
+}
+
+h1 {
+    font-size: 3em; /* Adjust as necessary */
+    margin-bottom: 10px;
+     /* Infinite fade in/out */
+    animation-delay: 0s; /* Starts immediately */
+}
+
+
+footer {
+    background-color: #222; /* Dark background */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #1DA1F2; /* Change color on hover (customize for each platform if you like) */
+}
+
+
+footer .social-links a:hover i.fa-linkedin {
+    color: #0077B5; /* LinkedIn Blue */
+}
+
+footer .social-links a:hover i.fa-github {
+    color: #333; /* GitHub Dark */
+}
+
+footer .social-links a:hover i.fa-instagram {
+    color: #E1306C; /* Instagram Pink */
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about {
+    animation: fadeIn 2s ease-out;
+    background-color: #2e2e2e; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+.typing-effect {
+    border-right: 2px solid #1DA1F2;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #1DA1F2;
+    }
+}
+
+
+#skills h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills h2:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    color: #1DA1F2; /* Change color on hover */
+}
+
+#skills p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #ccc;
+    transition: color 0.3s ease-in-out;
+}
+
+#skills p:hover {
+    color: #1DA1F2; /* Highlight text on hover */
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background for aesthetics */
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #ccc; /* Softer color for paragraphs */
+}
+
+button, .btn {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #1488CC;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#about, #skills, #projects, #contact {
+    margin-bottom: 40px; /* Space between sections */
+    border-radius: 8px;
+    padding: 50px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1DA1F2; /* Accent color for headings */
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Slower transition */
+}
+
+.scroll-reveal.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+footer .social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #1DA1F2;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #1488CC;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #1DA1F2;
+}
+
+
+
+
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 15vh; /* Reduced height for compactness */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; } /* Blink effect */
+    50% { opacity: 1; }
+}
+
+h1 {
+    font-size: 2.5em; /* Reduced font size */
+    color: white;
+    white-space: nowrap; /* Keep text on one line */
+    overflow: hidden; /* Hide overflowing content */
+    animation: typing 3.5s steps(30, end) forwards; /* Typing effect without cursor */
+    display: inline-block; /* Necessary for width animation */
+    text-align: center; /* Center text */
+    position: relative; /* To position the blinking cursor */
+}
+
+h1::after {
+    content: ''; /* Empty content for the cursor */
+    position: absolute; /* Position relative to h1 */
+    right: 0; /* Align to the right */
+    width: 0.2px; /* Width of the blinking cursor */
+    height: 100%; /* Full height of the text */
+    background-color: transparent;/* Cursor color */
+    animation: none; /* Blinking effect */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller font size on tablets */
+    }
+    
+    section {
+        margin: 10px 0; /* Reduced margin for smaller screens */
+    }
+
+    .header-container {
+        height: 40vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Further reduced font size for mobile */
+    }
+
+    .header-container {
+        height: 30vh; /* Further reduced height for mobile */
+    }
+}
+
+
+
+
+
+
+
+
+section {
+    padding: 50px;
+    margin: 20px auto;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    border: 1px solid #444;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Crazy enhanced gradient waves background */
+#crazy-enhanced-gradient-waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Layer 1 - Slow moving green wave */
+.wave1 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.4), rgba(0, 200, 0, 0.2));
+    animation: waveMove1 20s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+/* Layer 2 - Medium moving neon wave */
+.wave2 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.5), rgba(0, 200, 255, 0.3));
+    animation: waveMove2 15s ease-in-out infinite reverse;
+    opacity: 0.5;
+}
+
+/* Layer 3 - Fast moving purple wave */
+.wave3 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(255, 0, 255, 0.3), rgba(200, 0, 200, 0.2));
+    animation: waveMove3 10s ease-in-out infinite;
+    opacity: 0.4;
+}
+
+/* Layer 4 - Rapid pulsating blue wave */
+.wave4 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.6), rgba(0, 0, 200, 0.3));
+    animation: waveMove4 8s ease-in-out infinite;
+    opacity: 0.3;
+}
+
+/* Wave animations */
+@keyframes waveMove1 {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(50%, 0);
+    }
+}
+
+@keyframes waveMove2 {
+    0% {
+        transform: translate(50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, 50%);
+    }
+}
+
+@keyframes waveMove3 {
+    0% {
+        transform: translate(0, 50%);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes waveMove4 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Optimized gradient waves background */
+#optimized-gradient-waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Layer 1 - Slow moving green wave */
+.wave1 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.3), rgba(0, 200, 0, 0.1));
+    animation: waveMove1 20s ease-in-out infinite;
+    opacity: 0.7;
+    will-change: transform;
+}
+
+/* Layer 2 - Fast moving blue wave */
+.wave2 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.4), rgba(0, 200, 255, 0.2));
+    animation: waveMove2 15s ease-in-out infinite reverse;
+    opacity: 0.5;
+    will-change: transform;
+}
+
+/* Wave animations */
+@keyframes waveMove1 {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(50%, 0);
+    }
+}
+
+@keyframes waveMove2 {
+    0% {
+        transform: translate(50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, 50%);
+    }
+}
+
+
+
+#contact {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #00FF00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background: #00CC00;
+}
+
+
+.button-3d {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #d1d1d1,
+                -5px -5px 15px #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 25px #d1d1d1,
+                -5px -5px 25px #ffffff;
+}
+
+
+.neon {
+    color: #00FF00;
+    text-shadow: 
+        0 0 5px #00FF00, 
+        0 0 10px #00FF00, 
+        0 0 15px #00FF00, 
+        0 0 20px #00FF00;
+    font-size: 2em;
+}
+
+
+.reveal-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 4s forwards;
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    color: #fff;
+}
+
+
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.wave {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #00FF00 25%, transparent 25%, transparent 75%, #00FF00 75%);
+    background-size: 200% 100%;
+    animation: wave 2s linear infinite;
+}
+
+
+
+:root {
+    --main-bg-color: #1a1a1a;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --neon-color: #00FF00;
+    --text-color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(270deg, #1c1c1c, #3a3a3a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: var(--text-color);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--neon-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    background: var(--glass-bg);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: var(--neon-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+.tryhackme-badge {
+    text-align: center;
+    padding: 10px;
+}
+
+.tryhackme-badge img {
+    width: 150px;
+    height: auto;
+}
+
+.tryhackme-badge p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+
+.tryhackme-badge img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Ensure it's a square for a perfect circle */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image is properly scaled */
+    border: 2px solid #ffffff; /* Optional: add a border */
+}
+
+
+
+
+.tryhackme-badge {
+    text-align: center; /* Centers the text and image */
+    margin-top: 20px;
+}
+
+.tryhackme-badge p {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    font-size: 18px; /* Adjust the size */
+    font-weight: 600; /* Bold text */
+    color: #ffffff; /* White text for contrast */
+    margin-top: 10px; /* Space between the badge and text */
+    letter-spacing: 1.2px; /* Adds spacing between letters */
+    text-transform: uppercase; /* Makes the text uppercase */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for depth */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.tryhackme-badge p:hover {
+    color: rgb(58, 153, 87); /* Changes color on hover for interactivity */
+}
